@@ -1,0 +1,26 @@
+{
+  "name": "resource_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js",
+    "start:sse": "node dist/sse.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/inspector": "^0.5.1",
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "express": "^4.21.1",
+    "zod": "^3.24.2",
+    "zod-to-json-schema": "^3.24.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.14.1",
+    "shx": "^0.3.4",
+    "typescript": "^5.6.2"
+  }
+}
